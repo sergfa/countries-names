@@ -1,7 +1,7 @@
 {
   "name": "countries-names",
   "version": "1.0.0",
-  "description": "A library for your all starwars needs",
+  "description": "A-Z list of countries as JavaScript array",
   "main": "dist/index.js",
   "dependencies": {
     "unique-random-array": "^1.0.1"
@@ -64,12 +64,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kentcdodds/starwars-names.git"
+    "url": "git+https://github.com/sergfa/countries-names.git"
   },
   "author": "Sergey Fayman <sergfa@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kentcdodds/starwars-names/issues"
+    "url": "https://github.com/sergfa/countries-names/issues"
   },
-  "homepage": "https://github.com/kentcdodds/starwars-names#readme"
+  "homepage": "https://github.com/sergfa/countries-names#readme"
 }

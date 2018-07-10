@@ -3,7 +3,7 @@ import {expect} from 'chai';
 import names from './index.js';
 import * as R from 'ramda';
 
-describe('starwars-names', function () {
+describe('countries-names', () => {
     it('should get a list of all names',  () => {
         //all
         const isAllNamesStrings = R.all(R.is(String));
