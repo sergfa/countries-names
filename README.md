@@ -2,16 +2,39 @@
 
 ## A-Z list of countries
 
-## Installation
+
+
+
+Installation
+------------
+
 To use with node:
+
+```bash
 $ npm install countries-names
+```
 
 Then in the console:
-const countriesList = require('countries-names');
-console.log(countriesList.all);
+
+```javascript
+const countriesNames = require('countries-names');
+```
 
 To use directly in the browser:
-<script src="path/to/yourCopyOf/countries-names.min.js"></script>
+
+```html
+
+<script src="path/to/yourCopyOf/countries-names.js"></script>
+
 <script>
-console.log(countriesNames.all);
+
+  console.log(countriesNames.all);
+  
 </script>
+```
+
+or the minified version:
+
+```html
+<script src="path/to/path/to/yourCopyOf/countries-names.min.js"></script>
+```
