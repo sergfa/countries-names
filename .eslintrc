@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "extends": [
+    "kentcdodds/best-practices",
+    "kentcdodds/possible-errors"
+  ],
+  "rules": {},
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
