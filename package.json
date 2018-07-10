@@ -1,6 +1,6 @@
 {
   "name": "countries-names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A-Z list of countries as JavaScript array",
   "main": "dist/index.js",
   "dependencies": {
