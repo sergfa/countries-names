@@ -9,7 +9,7 @@ export default {
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'countries-names',
+    library: 'countriesNames',
   },
   devtool: 'source-map',
   module: {
