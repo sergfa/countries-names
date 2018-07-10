@@ -11,7 +11,7 @@ Installation
 To use with node:
 
 ```bash
-$ npm install countries-names
+npm install countries-names
 ```
 
 Then in the console:
@@ -38,3 +38,17 @@ or the minified version:
 ```html
 <script src="path/to/path/to/yourCopyOf/countries-names.min.js"></script>
 ```
+
+## Usage
+
+```javascript
+
+//Returns an array of all country names.
+countriesNames.all
+
+
+//Returns a random country name.
+countriesNames.random()
+
+```
+
