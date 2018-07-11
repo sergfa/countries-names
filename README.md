@@ -58,5 +58,6 @@ or the minified version:
 
 //Returns the country code which matches the country name, or undefined if no code matches.
 ### codeByName(country)
+
 ```
 
