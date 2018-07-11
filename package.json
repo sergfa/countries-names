@@ -4,7 +4,6 @@
   "description": "A-Z list of countries as JavaScript array",
   "main": "dist/index.js",
   "dependencies": {
-    "semantic-release-cli": "^4.0.6",
     "unique-random-array": "^1.0.1"
   },
   "devDependencies": {
@@ -31,7 +30,8 @@
     "travis-deploy-once": "^5.0.1",
     "validate-commit-msg": "^2.14.0",
     "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "semantic-release-cli": "^4.0.6"
   },
   "nyc": {
     "check-coverage": true,
