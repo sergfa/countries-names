@@ -86,5 +86,13 @@
   "bugs": {
     "url": "https://github.com/sergfa/countries-names/issues"
   },
-  "homepage": "https://github.com/sergfa/countries-names#readme"
+  "homepage": "https://github.com/sergfa/countries-names#readme",
+  "keywords": [
+    "country",
+    "countries",
+    "ISO 3166-1-alpha-2",
+    "ISO 3166-1",
+    "names",
+    "world"
+  ]
 }
