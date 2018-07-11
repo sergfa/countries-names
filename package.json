@@ -1,9 +1,10 @@
 {
   "name": "countries-names",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "A-Z list of countries as JavaScript array",
   "main": "dist/index.js",
   "dependencies": {
+    "semantic-release-cli": "^4.0.6",
     "unique-random-array": "^1.0.1"
   },
   "devDependencies": {
@@ -14,7 +15,9 @@
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "codecov": "^3.0.4",
+    "commitizen": "^2.10.1",
     "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.0.1",
     "eslint-config-kentcdodds": "^14.0.0",
     "ghooks": "^2.0.4",
@@ -24,6 +27,9 @@
     "nyc": "^12.0.2",
     "ramda": "^0.25.0",
     "rimraf": "^2.6.2",
+    "semantic-release": "^15.7.0",
+    "travis-deploy-once": "^5.0.1",
+    "validate-commit-msg": "^2.14.0",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
   },
@@ -46,10 +52,15 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run validate"
+      "pre-commit": "npm run validate",
+      "commit-msg": "validate-commit-msg"
+    },
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   },
   "scripts": {
+    "commit": "git-cz",
     "test": "cross-env NODE_ENV=test nyc mocha",
     "lint": "eslint src",
     "watch:test": "mocha --watch",
@@ -59,14 +70,16 @@
     "build": "npm-run-all --parallel build:*",
     "prebuild": "rimraf dist",
     "build:dev": "webpack --mode development --output-filename countries-names.js",
-    "report-coverage": "cat ./coverage/lcov.info | codecov"
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergfa/countries-names.git"
+    "url": "https://github.com/sergfa/countries-names.git"
   },
   "author": "Sergey Fayman <sergfa@gmail.com>",
   "license": "MIT",
