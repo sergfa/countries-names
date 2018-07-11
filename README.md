@@ -2,7 +2,7 @@
 
 ## A-Z list of countries
 
-
+## Works in node and browser
 
 
 Installation
@@ -28,7 +28,7 @@ To use directly in the browser:
 
 <script>
 
-  console.log(countriesNames.all);
+  console.log(Cnames.all());
   
 </script>
 ```
@@ -43,12 +43,20 @@ or the minified version:
 
 ```javascript
 
-//Returns an array of all country names.
-countriesNames.all
+//Returns an array of all country names and their codes. [{name:'Afghanistan', code: 'AF'},...]
+### all()
 
 
-//Returns a random country name.
-countriesNames.random()
+//Returns an array of  country names ['Afghanistan', 'Albania', ...]
+### names()
 
+////Returns an array of  country names ['AF', 'AL', ...]
+### codes()
+
+//Returns the country name which matches the country code, or undefined if no country matches.
+### countryByCode(code)
+
+//Returns the country code which matches the country name, or undefined if no code matches.
+### codeByCountry(country)
 ```
 
