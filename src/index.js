@@ -12,8 +12,8 @@ const findBy = (value, searchProperty, returnProperty) => pipe(find(country => e
 const mainExport = {
     names: () => map(prop('Name'))(originalData),
     codes: () => map(prop('Code'))(originalData),
-    countryByCode: country => findBy(toLower(country || ''), 'Code', 'Name')(originalData),
-    codeByCountry: code => findBy(toLower(code || ''), 'Name', 'Code')(originalData),
+    countryByCode: code => findBy(toLower(code || ''), 'Code', 'Name')(originalData),
+    codeByCountry: country => findBy(toLower(country || ''), 'Name', 'Code')(originalData),
     all: () => map(item=>({name:item.Name, code: item.Code}))(originalData)
 };
 
