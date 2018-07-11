@@ -54,9 +54,9 @@ or the minified version:
 ### codes()
 
 //Returns the country name which matches the country code, or undefined if no country matches.
-### countryByCode(code)
+### nameByCode(code)
 
 //Returns the country code which matches the country name, or undefined if no code matches.
-### codeByCountry(country)
+### codeByName(country)
 ```
 

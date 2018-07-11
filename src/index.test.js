@@ -57,60 +57,60 @@ describe('countries-names', () => {
 
 
     it('should get undefined country when for invalid code', () => {
-        //countryByCode()
-        expect(C.countryByCode('WWW')).to.be.equal(undefined);
+        //nameByCode()
+        expect(C.nameByCode('WWW')).to.be.equal(undefined);
     });
 
     it('should get undefined country when for undefined code', () => {
-        //countryByCode()
-        expect(C.countryByCode()).to.be.equal(undefined);
+        //nameByCode()
+        expect(C.nameByCode()).to.be.equal(undefined);
     });
 
     it('should get undefined country when for null code', () => {
-        //countryByCode()
-        expect(C.countryByCode(null)).to.be.equal(undefined);
+        //nameByCode()
+        expect(C.nameByCode(null)).to.be.equal(undefined);
     });
 
     it('should get country name when for the specified code', () => {
-        //countryByCode()
+        //nameByCode()
         const expectedCountry = originalData[0];
-        expect(C.countryByCode(expectedCountry.Code)).to.be.equal(expectedCountry.Name);
+        expect(C.nameByCode(expectedCountry.Code)).to.be.equal(expectedCountry.Name);
     });
 
 
     it('should get country name  for the specified code in lower case', () => {
-        //countryByCode()
+        //nameByCode()
         const expectedCountry = originalData[originalData.length - 1];
-        const actualCountry = C.countryByCode(R.toLower(expectedCountry.Code));
+        const actualCountry = C.nameByCode(R.toLower(expectedCountry.Code));
         expect(actualCountry).to.be.equal(expectedCountry.Name);
     });
 
 
     it('should get undefined code when for invalid country', () => {
-        //codeByCountry()
-        expect(C.codeByCountry('Apple')).to.be.equal(undefined);
+        //codeByName()
+        expect(C.codeByName('Apple')).to.be.equal(undefined);
     });
 
     it('should get undefined code when for undefined country', () => {
-        //codeByCountry()
-        expect(C.codeByCountry()).to.be.equal(undefined);
+        //codeByName()
+        expect(C.codeByName()).to.be.equal(undefined);
     });
 
     it('should get undefined code when for null country', () => {
-        //codeByCountry()
-        expect(C.codeByCountry(null)).to.be.equal(undefined);
+        //codeByName()
+        expect(C.codeByName(null)).to.be.equal(undefined);
     });
 
     it('should get code name when for the specified country', () => {
-        //codeByCountry()
+        //codeByName()
         const expectedCountry = originalData[0];
-        expect(C.codeByCountry(expectedCountry.Name)).to.be.equal(expectedCountry.Code);
+        expect(C.codeByName(expectedCountry.Name)).to.be.equal(expectedCountry.Code);
     });
 
     it('should get code name when for the specified country in upper case', () => {
-        //codeByCountry()
+        //codeByName()
         const expectedCountry = originalData[0];
-        const actualCode = C.codeByCountry(R.toUpper(expectedCountry.Name));
+        const actualCode = C.codeByName(R.toUpper(expectedCountry.Name));
         expect(actualCode).to.be.equal(expectedCountry.Code);
     });
 
