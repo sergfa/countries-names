@@ -4,7 +4,9 @@
   "description": "A-Z list of country names and their codes",
   "main": "dist/index.js",
   "dependencies": {
-    "ramda": "^0.25.0"
+    "axios": "^0.18.0",
+    "ramda": "^0.25.0",
+    "rxjs": "^6.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -35,10 +37,10 @@
   },
   "nyc": {
     "check-coverage": true,
-    "branches": 99,
-    "functions": 99,
-    "statements": 99,
-    "lines": 99,
+    "branches": 75,
+    "functions": 75,
+    "statements": 75,
+    "lines": 75,
     "reporter": [
       "text",
       "lcov"

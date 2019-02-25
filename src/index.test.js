@@ -114,6 +114,16 @@ describe('countries-names', () => {
         expect(actualCode).to.be.equal(expectedCountry.Code);
     });
 
+    it('should get country info from wikipedia', (done) => {
+            C.searchWiki('Israel').subscribe(
+                result => {
+                    expect(result.length > 0).to.be.equal(true);
+                    done();
+                }
+            )
+    });
+
+
 
 
 });
